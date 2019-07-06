@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,700,700i&display=swap');
+
+.text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    text-align: justify;
+  }
+ 
+  .text [last]{
+      text-align-last: right;
+    color: green;  
+}

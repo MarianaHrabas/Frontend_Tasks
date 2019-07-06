@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <h2>Task3</h2>
+    <form>
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+
+            <tr>
+                <td>Name</td>
+                <td>
+                    <input type="text" id="first_name">
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>Sex</td>
+                <td>
+                    <input type="radio" name="sex" value="male"> Male<br>
+                    <input type="radio" name="sex" value="female" checked> Female<br>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Eye color</td>
+                <td>
+                    <select id="eye_colors">
+                        <option>green</option>
+                        <option>gray</option>
+                        <option>blue</option>
+                        <option>brown</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Check all that apply</td>
+                <td>
+                    <input type="checkbox" name="Check all that apply" value="Over 6 feet tall">Over 6 feet tall<br>
+                    <input type="checkbox" name="Check all that apply" value="Over 200 pounds">Over 200 pounds<br>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">Describe your athletic ability:<br>
+                <textarea name="message" rows="5" id="input_text"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" id="submit_td">
+                    <input id="submit_btn" type="submit" value="Ener my information" onclick="alert('Data is submitted!')">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

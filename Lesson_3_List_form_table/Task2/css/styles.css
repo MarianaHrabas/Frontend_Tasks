@@ -1,0 +1,17 @@
+  
+table {
+    width:40%
+    }
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+th {
+    border:1px solid black
+}
+ td {
+    border: 1px solid lightgray;
+}
+ th {
+  text-align: center;
+}
