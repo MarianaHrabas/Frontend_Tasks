@@ -1,0 +1,24 @@
+body, html, .container{
+    height: 90%;
+}
+
+.container{
+border: 1px solid black; 
+margin-top:100px;
+}
+
+.row{
+    display:flex;
+}
+
+#row1, #row2{
+    height:40%;
+}
+
+#row3{
+    height:20%;
+}
+
+.col-sm-3,.col-sm-6,.col-sm-9{
+    border: 1px solid black;
+}

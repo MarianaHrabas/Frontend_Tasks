@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+
+.main {
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    border:2px solid #86b6cd;
+    background: #eaeaea;
+    max-width: 20vw; 
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10pt;
+    border: 1px solid #eaeaea;
+    background: #f0f0f0;
+    outline: none;
+    padding: 6px;
+}
+
+button:focus {
+    outline: none;   
+}
+
+button:hover {
+    background: #b1b4b5;
+}
+
+[name="number"] {
+    background:#fbfbfb;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+[name="operation"]:hover {
+    background: #15a1c1;
+    color:white;
+}
+
+#output {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18pt;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+img {
+    height: 16px;
+}
+
+[name="button"] {
+   background:transparent;
+   font-size: 10pt;
+}
