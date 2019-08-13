@@ -1,0 +1,187 @@
+@media screen {
+    @import url('https://fonts.googleapis.com/css?family=Montserrat:500|Nunito+Sans:400,700&display=swap');
+
+    body {
+        margin: 0 auto;
+    }
+    
+    .general_container{
+        display:flex;
+        height: 100%;
+        width:100%;
+        background-color: #f5f5f5;
+        margin: 0;
+        justify-content:center;
+        flex-direction:row;
+        flex-wrap:wrap;
+    }
+    
+    .header {
+        display: flex;
+        background-color: black;
+        width:100%;
+        padding:20px 80px;
+    }
+    
+    .navigation {
+        margin-left: 20px;
+        align-self: center;
+    }
+
+    .header a {
+        text-decoration:none; 
+        color:#f0f0f0;
+        font-family: 'Montserrat', sans-serif;
+        font-weight:600;
+        font-size:14px;
+        padding:10px;
+    }
+    
+    .header a:hover {
+        color: #e84933;
+    }
+    
+    .main {
+        display:flex;
+        justify-content:space-between;
+        width:100%;
+        margin:0px;
+        flex-direction:row;
+        padding-left: 80px;
+        padding-right: 30px;
+    }
+
+    .about {
+        display:flex;
+        margin-top:20px;
+    }
+
+    .about > .description {
+        display:flex;
+        flex-direction: column;
+        margin-left: 40px;
+        justify-content: space-evenly;
+    }
+
+    .about > .description > .buttons {
+        display:flex;
+        margin-top:20px;
+    }
+    
+    .about > .description > .title {
+        color: rgb(95, 95, 95);
+        font-size: 40px;
+        font-family:'Nunito Sans', sans-serif;
+        margin: 0px;
+    }
+
+    /*Only for printable version*/
+    .about > .description > .contact {
+        display: none;
+    }
+
+    .about > .description > .text {
+        color: rgb(95, 95, 95);
+        font-size: 18px;
+        font-family:'Nunito Sans', sans-serif;
+    }
+
+    input[type='button'] {
+        background: #e84933;
+        border: 3px solid #e84933;
+        border-radius: 3px;
+        padding: 10px;
+        color: white;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        outline: none;
+    }
+
+    input[type='button']:hover {
+        background: #ffffff;
+        color: #e84933;
+    }
+
+    /* Education */
+    .education > .title {
+        color: #e84933;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 22px;
+    }
+
+    .education > div > div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .education > div > div > .title {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        color: rgb(95, 95, 95);
+    }
+
+    
+    .education > div > div > .year {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        color: rgb(95, 95, 95);
+    }
+
+    .education > div > .major {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        color: rgb(167, 167, 167);
+    }
+
+    .education > div > .description {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        color: rgb(95, 95, 95);
+    }
+
+    /*Side*/
+    .contact_box > div > .contact {
+        display: flex;
+        align-self: auto;
+        margin-bottom: 10px;
+    }
+
+    .contact_box > .title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        color: rgb(95, 95, 95);
+    }
+    
+    .contact_box > div > .contact > .info {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        color: rgb(95, 95, 95);
+    }
+    
+    .skills_text {
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 22px;
+        color: rgb(95, 95, 95);
+        margin-top: 60px
+    }
+
+    .skill > p.title {
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        color: rgb(95, 95, 95);
+    }
+
+    .skill > p.description {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        color: rgb(95, 95, 95);
+    }
+
+    .checked {
+        color: orange;
+    }
+}

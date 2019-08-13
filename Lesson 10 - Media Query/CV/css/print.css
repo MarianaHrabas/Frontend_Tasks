@@ -1,0 +1,106 @@
+
+   @media print { 
+
+    @font-face{
+        font-family: 'Montserrat', sans-serif;
+        src: url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+    }
+
+    body {
+        font-family:  'Montserrat', sans-serif;
+    }
+
+    .main {
+        display:flex;
+        justify-content:space-between;
+        width:100%;
+        margin:0px;
+        flex-direction:row;
+    }
+
+    .header {
+        display: none;
+    }
+    
+    .about {
+        display:flex;
+        margin-top:20px;
+    }
+
+    .about > img {
+        height: 240px;
+    }
+
+    .about > .description {
+        margin-left: 20px;
+    }
+
+    .about > .description > .title {
+        font-size: 30px;
+        font-weight: 400;
+        margin: 0px;
+    }
+
+    .about > .description > .text {
+        color: rgb(95, 95, 95);
+        font-size: 14px;
+    }
+
+    .about > .description > .buttons {
+        display: none;
+    }
+
+    /* Education */
+    .education > .title {
+        color: #e84933;
+        font-weight: bold;
+        font-size: 22px;
+    }
+
+    .education > div > div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .education > div > div > .title {
+        font-weight: bold;
+        font-size: 16px;
+    }
+    
+    .education > div > div > .year {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .education > div > .major {
+        font-size: 14px;
+        color: rgb(167, 167, 167);
+    }
+
+    .education > div > .description {
+        font-size: 14px;
+    }
+
+    /*Side*/
+    .contact_box {
+        display: none;
+    }
+
+    .skills_text {
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .skill > p.title {
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .contact_info {
+        font-size: 12px;
+    }
+
+    .checked {
+        color: orange;
+    }
+}

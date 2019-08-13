@@ -1,0 +1,32 @@
+.main {
+    min-height: 100vh; 
+    display: flex;
+    align-items: center;
+}
+
+#left_col, #right_col {
+    height:inherit;
+    width:inherit;
+}
+
+.col-3, .col-sm-3 {
+    padding:40px;
+    margin:3px 4px 5px 4px;
+    font-size: 18px;
+}
+
+.col-2, .col-sm-2 {
+    padding:22px;
+    margin:3px 5px 2px 5px;
+    font-size: 18px; 
+}
+
+[name="column"] {
+    background:#000066;
+    vertical-align: text-bottom;
+    color: white;
+}
+
+div > .col-3,.col-sm-3{
+    vertical-align: text-bottom;
+}
