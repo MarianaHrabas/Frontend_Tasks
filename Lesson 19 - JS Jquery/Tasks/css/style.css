@@ -1,0 +1,89 @@
+.popup{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin: 50px;
+}
+
+.popup .popuptext{
+    visibility: hidden;
+    width: 100px;
+    background-color: green;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom:100%;
+    left:20%;
+    margin-left: -50px;
+}
+.popup .popuptext::after{
+    content:"";
+    position: absolute;
+    top:100%;
+    left:50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-block-style: double;
+    border-block-color: red;
+}
+
+.popup .show{
+    visibility: visible;
+}
+
+
+/*Task 4*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.loadcotainer {
+  width: 100%;
+  margin: 100px auto;
+}
+
+.wrap {
+  display: block;
+  width: 480px;
+  margin: 0 auto; 
+  position: relative;
+  height:70px;
+  background: rgb(216, 216, 216);
+  border-radius: 30px;
+}
+
+.progress-wrap {
+  display: block;
+  width: 465px;
+  position: absolute;
+  top:0;
+  left:0;
+  padding:8px;
+  border-radius: 8px;
+}
+
+.progress {
+  display: inline-block;
+  margin: 0;   
+  padding-top: 18px;
+  background: green;
+  width: 7%;
+  height: 56px;
+  border-radius: 30px;
+  position: absolute;
+  text-align: center;
+  background-size: 65px 65px;
+}
+
+.countup {
+  position: relative;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 24px;
+}

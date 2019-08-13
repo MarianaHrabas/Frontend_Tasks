@@ -1,43 +1,43 @@
-/*1. написати функцію randomNumber(number) яка наповнює масив випадковими числами від -100 до 100, 
-де number - довжина масиву*/
+// /*1. написати функцію randomNumber(number) яка наповнює масив випадковими числами від -100 до 100, 
+// де number - довжина масиву*/
 function randomNumber(number) {
-    var arr = [];
-    var min = -100;
-    var max = 100;
-    for (var i = 0; i < number; i++) {
-        arr.push(Math.round(Math.random() * (max - min) + min));
-    }
-    return arr;
+  var arr = [];
+  var min = -100;
+  var max = 100;
+  for (var i = 0; i < number; i++) {
+    arr.push(Math.round(Math.random() * (max - min) + min));
+  }
+  return arr;
 }
 var number = parseInt(prompt("Input your digit"));
-var numberArr = randomNumber(number); 
+var numberArr = randomNumber(number);
 console.log(numberArr);
 
 //1.1. через filter вивести масив з числами, які більші 10
-var filteredArr = numberArr.filter(function(number){ 
-    return number > 10;
+var filteredArr = numberArr.filter(function (number) {
+  return number > 10;
 });
 console.log(filteredArr);
 
 
-/*2. Відсортувати строку lorem по зростанню(по довжині)
-- Перетворити стрічку на масив
-- відсортувати масив
-- з'єднати назад в стрічку*/
+// /*2. Відсортувати строку lorem по зростанню(по довжині)
+// - Перетворити стрічку на масив
+// - відсортувати масив
+// - з'єднати назад в стрічку*/
 var str = "Lorem ipsum dolor sit amet consectetur adipiscing elit";
 var arr = str.split(" ");
-function sortArr(arr){
-    var sortedArr = arr.sort(function compareStrings(a, b) {
-        if (a.length > b.length) return 1
-        if (a.length < b.length) return -1
-    });
-    return sortedArr;
+function sortArr(arr) {
+  var sortedArr = arr.sort(function compareStrings(a, b) {
+    if (a.length > b.length) return 1
+    if (a.length < b.length) return -1
+  });
+  return sortedArr;
 }
 console.log(sortArr(arr).join(" "));
 
 
-/*3. Дано масив об’єктів. Вивести масив телефонних номерів користувачів в яких баланс більше
-2000 доларів і суму всіх балансів*/
+// /*3. Дано масив об’єктів. Вивести масив телефонних номерів користувачів в яких баланс більше
+// 2000 доларів і суму всіх балансів*/
 
 var users = [
   {
@@ -96,18 +96,32 @@ var users = [
   }
 ]
 
-console.log(users.filter(function(user){
-    var balance = parseFloat(user.balance.substring(1).replace(",", ""));
-    return balance > 2000;
-}).map(function(user){
-    return user.phone;
+console.log(users.filter(function (user) {
+  var balance = parseFloat(user.balance.substring(1).replace(",", ""));
+  return balance > 2000;
+}).map(function (user) {
+  return user.phone;
 }));
 
-console.log(users.map(function(user){
-    return parseFloat(user.balance.substring(1).replace(",", ""));
-}).reduce(function(sum, current) {
-    return sum + current;
+console.log(users.map(function (user) {
+  return parseFloat(user.balance.substring(1).replace(",", ""));
+}).reduce(function (sum, current) {
+  return sum + current;
 }))
 
 
-//4. Використовуючи lodash, повернути масив з унікальних елементів масиву [1, 2, 1, 4, 1, 3]
+// //4. повернути масив з унікальних елементів масиву [1, 2, 1, 4, 1, 3]
+
+var arr1 = [1, 2, 1, 4, 1, 3];
+function getUniqueElementsArr(arr) {
+  var newArr = [];
+  for (var i = 0; i < arr1.length; i++) {
+    if(newArr.includes(arr[i])){
+      continue;
+    }
+    newArr.push(arr1[i]);
+  }
+  return newArr;
+}
+console.log(getUniqueElementsArr(arr1));
+
