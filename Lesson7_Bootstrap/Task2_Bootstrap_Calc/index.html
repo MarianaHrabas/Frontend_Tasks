@@ -7,81 +7,82 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel=stylesheet href="css/style.css">
+    <link rel=stylesheet href="css/style.css">
     <title>Task2-Bootstrap_Calc</title>
 </head>
 
 <body>
     <div class="main">
-    <div class="container">
-        <div class="row">
-        <div class="col-12"><b>Calculator</b></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12"><b>Calculator</b></div>
+            </div>
+
+            <div class="row">
+                <div class="col-3 col-sm-3"><button name="button">&#9776;</button></div>
+                <div class="col-3 col-sm-6">Standard</div>
+                <div class="col-3 col-sm-3"><button name="button"><img src="img/reset.png" alt="Reset"></button></div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 text-right" id="output">0</div>
+            </div>
+
+            <div class="row">
+                <button class="col-2 col-sm-2" name="button" disabled>MC</button>
+                <button class="col-2 col-sm-2" name="button" disabled>MR</button>
+                <button class="col-2 col-sm-2" name="button" disabled>M+</button>
+                <button class="col-2 col-sm-2" name="button" disabled>M-</button>
+                <button class="col-2 col-sm-2" name="button" disabled>MS</button>
+                <button class="col-2 col-sm-2" name="button" disabled>M</button>
+            </div>
+
+            <div class="row">
+                <button class="col-3 col-sm-3" disabled>&#37;</button>
+                <button class="col-3 col-sm-3" disabled>&#8730;</button>
+                <button class="col-3 col-sm-3" disabled>x&#178;</button>
+                <button class="col-3 col-sm-3" disabled>1/x</button>
+            </div>
+
+            <div class="row">
+                <button id="CE" class="col-3 col-sm-3" onclick="input(this.id)">CE</button>
+                <button id="C" class="col-3 col-sm-3" onclick="input(this.id)">C</button>
+                <button id="del" class="col-3 col-sm-3" onclick="input(this.id)"><img src="img/backspace.png" alt="Backspace"></button>
+                <button id="/" class="col-3 col-sm-3" name="operation" onclick="input(this.id)">&#247;</button>
+            </div>
+
+            <div class="row">
+                <button id="7" class="col-3 col-sm-3" name="number" onclick="input(this.id)">7</button>
+                <button id="8" class="col-3 col-sm-3" name="number" onclick="input(this.id)">8</button>
+                <button id="9" class="col-3 col-sm-3" name="number" onclick="input(this.id)">9</button>
+                <button id="*"class="col-3 col-sm-3" name="operation" onclick="input(this.id)">&#215;</button>
+            </div>
+
+            <div class="row">
+                <button id="4" class="col-3 col-sm-3" name="number" onclick="input(this.id)">4</button>
+                <button id="5" class="col-3 col-sm-3" name="number" onclick="input(this.id)">5</button>
+                <button id="6" class="col-3 col-sm-3" name="number" onclick="input(this.id)">6</button>
+                <button id="-" class="col-3 col-sm-3" name="operation" onclick="input(this.id)">&#8722;</button>
+            </div>
+
+            <div class="row">
+                <button id="1" class="col-3 col-sm-3" name="number" onclick="input(this.id)">1</button>
+                <button id="2" class="col-3 col-sm-3" name="number" onclick="input(this.id)">2</button>
+                <button id="3" class="col-3 col-sm-3" name="number" onclick="input(this.id)">3</button>
+                <button id="+" class="col-3 col-sm-3" name="operation" onclick="input(this.id)">&#43;</button>
+            </div>
+
+            <div class="row">
+                <button class="col-3 col-sm-3" disabled>&#177;</button>
+                <button id="0" class="col-3 col-sm-3" name="number" onclick="input(this.id)">0</button>
+                <button class="col-3 col-sm-3" disabled>&#8901;</button>
+                <button id= "=" class="col-3 col-sm-3" name="operation" onclick="input(this.id)">&#61;</button>
+            </div>
+        </div>
+
     </div>
-        
-        <div class="row">
-            <div class="col-3 col-sm-3"><button name="button">&#9776;</button></div>
-            <div class="col-3 col-sm-6">Standard</div> 
-            <div class="col-3 col-sm-3"><button name="button"><img src="img/reset.png" alt="Reset"></button></div>
-        </div>
-        
-        <div class="row">
-            <div class="col-12 text-right" id="output">0</div>
-        </div>
-      
-        <div class="row">
-            <button class="col-2 col-sm-2" name="button">MC</button>
-            <button class="col-2 col-sm-2" name="button">MR</button>
-            <button class="col-2 col-sm-2" name="button">M+</button>
-            <button class="col-2 col-sm-2" name="button">M-</button>
-            <button class="col-2 col-sm-2" name="button">MS</button>
-            <button class="col-2 col-sm-2" name="button">M</button>
-        </div>
 
-        <div class="row">
-            <button class="col-3 col-sm-3">&#37;</button>
-            <button class="col-3 col-sm-3">&#8730;</button>
-            <button class="col-3 col-sm-3">x&#178;</button>
-            <button class="col-3 col-sm-3">1/x</button>
-        </div>
-
-        <div class="row">
-            <button class="col-3 col-sm-3">CE</button>
-            <button class="col-3 col-sm-3">C</button>
-            <button class="col-3 col-sm-3"><img src="img/backspace.png" alt="Backspace"></button>
-            <button class="col-3 col-sm-3" name="operation">&#247;</button>
-        </div>
-
-        <div class="row">
-            <button class="col-3 col-sm-3" name="number">7</button>
-            <button class="col-3 col-sm-3" name="number">8</button>
-            <button class="col-3 col-sm-3" name="number">9</button>
-            <button class="col-3 col-sm-3" name="operation">&#215;</button>
-        </div>
-
-        <div class="row">
-            <button class="col-3 col-sm-3" name="number">4</button>
-            <button class="col-3 col-sm-3" name="number">5</button>
-            <button class="col-3 col-sm-3" name="number">6</button>
-            <button class="col-3 col-sm-3" name="operation">&#8722;</button>
-        </div>
-
-        <div class="row">
-            <button class="col-3 col-sm-3" name="number">1</button>
-            <button class="col-3 col-sm-3" name="number">2</button>
-            <button class="col-3 col-sm-3" name="number">3</button>
-            <button class="col-3 col-sm-3" name="operation">&#43;</button>
-        </div>
-
-        <div class="row">
-            <button class="col-3 col-sm-3">&#177;</button>
-            <button class="col-3 col-sm-3" name="number">0</button>
-            <button class="col-3 col-sm-3">&#8901;</button>
-            <button class="col-3 col-sm-3" name="operation">&#61;</button>
-        </div>
-    </div>
-
-</div>
-
+    <script src="JS/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
