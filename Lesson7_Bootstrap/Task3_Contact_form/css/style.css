@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500|Nunito+Sans:400,700&display=swap');
+
+body,.contact_info_form{
+    background:#f5f5f5;
+}
+
+#navbarResponsive > ul > .nav-item > .nav-link > span:hover {
+    color: #0fb3ad;
+} 
+
+.nav-link{
+    color: black;
+}
+
+.active > .nav-link {
+    color: #10c9c3;
+}
+
+
+h3{
+    color:#171717;
+}
+
+.col-md-6 > p{
+    color:#aaaaaa;
+}
+
+
+.form-control{
+    color:#9c9c9c;
+}
+
+.form-group > * {
+    border-color: transparent;
+}
+
+button[type='button']{
+    background-color: #10c9c3;
+    border-color: #10c9c3;
+}
+
+button[type='button']:hover{
+    background-color: #0fb3ad;
+    border-color: #0fb3ad;
+}
+
+footer{
+    background:#141414;
+    padding: 20px;
+}
+
+footer > .container > .row > div > * {
+    color: #bcbcbc;
+    padding: 0px;
+}
+
+footer > .container > .row > div > h5 {
+    color: white;
+}
